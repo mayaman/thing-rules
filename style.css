@@ -1,0 +1,47 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    color: white;
+    text-align: center;
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+    background: linear-gradient(45deg, hotpink, #66ff99);
+    background-size: 600% 600%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+main {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.special-word {
+    font-family: cursive;
+    font-size: 1.5em;
+}
+
+
+section {
+    font-size: 1.5em;
+    text-align: left;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
